@@ -1,5 +1,5 @@
 locals {
-  prefix              = "${var.product}-bootstrap-${var.env}"
+  prefix              = "${var.product}-bstrap-${var.env}"
   resource_group_name = "${local.prefix}-rg"
   key_vault_name      = "${local.prefix}-kv"
 }
