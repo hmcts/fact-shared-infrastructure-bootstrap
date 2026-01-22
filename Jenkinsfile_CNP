@@ -1,0 +1,11 @@
+#!groovy
+
+//noinspection GroovyUnusedAssignment
+@Library("Infrastructure") _
+
+def product = "fact"
+def component = "bootstrap"
+
+withInfraPipeline(product, component) {
+  syncBranchesWithMaster(['demo', 'perftest', 'ithc'])
+}
